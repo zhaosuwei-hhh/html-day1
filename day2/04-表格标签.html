@@ -1,0 +1,111 @@
+表格标签
+作用：不是用来布局，而是用来展示数据
+格式：
+<table></table>定义表格
+<tr></tr>定义行
+<td></td>定义单元格
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr><td>姓名</td> <td>性别</td><td>年龄</td></tr>
+        <tr><td>小米</td> <td>女</td> <td>19</td></tr>
+    </table>
+    
+</body>
+</html>
+
+表头标签<th></th>
+作用：居中加粗其中文字
+格式：
+<table>
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+</table>
+
+表格属性(后续用css)//写到table标签里面
+1.对齐  属性名 align   属性值left center right
+<table align="center">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+</table>
+2.边框  属性名border   属性值1或""//默认无边框
+<table align="center" border="1">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+</table>
+3.文字和边框之间的距离   cellpadding//默认1像素
+<table align="center" border="1" cellpadding="20">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+</table>
+4.单元格和单元格之间的距离  cellspacing//默认2像素
+<table align="center" border="1" cellpadding="20" cellspacing="0">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+</table>
+5.宽度 width
+  高度 height
+<table align="center" border="1" cellpadding="20" cellspacing="0" width="10" height="20">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>小米</td>
+        <td>女</td>
+        <td>19</td>
+    </tr>
+</table>
+
+
+表格结构标签
+表格头部区域<thead></thead>
+表格主体区域<tbody></tbody>
+

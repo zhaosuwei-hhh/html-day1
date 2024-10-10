@@ -1,0 +1,48 @@
+合并单元格
+方式1.跨行合并 rowspan="合并个数"
+    2.跨列合并 colspan="合并个数"
+
+目标单元格:跨行 最上侧单元格为目标单元格，写合并代码
+          跨列 最左侧单元格为目标单元格，写合并代码
+
+步骤:1.确定跨行还是跨列
+2.找到目标单元格写<td colspan="合并个数"></td>
+3.删除多余的单元格
+
+需要注意表头和表体不能合并
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center" border="1" cellpadding="20" cellspacing="0">
+        
+            <tr>
+                <td>排名</td>
+                <td>关键词</td>
+                <td rowspan="2">趋势</td>
+                <td>今日搜索</td>
+                <td>最近七日</td>
+                <td>相关链接</td>
+            </tr>
+        
+        
+            <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td>345</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百度</a></td>
+            </tr>
+        
+
+    </table>
+</body>
+
+</html>
